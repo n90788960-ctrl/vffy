@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Шахмат • Қазақша онлайн ойын</title>
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Шахмат • Онлайн</h1>
+      <div class="subtitle">Қазақша • Қарапайым • Күшті қарсылас</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="status">Ақ фигуралар жүреді</div>
+    <div id="board"></div>
+
+    <div class="controls">
+      <button class="btn-primary" onclick="newGame()">
+        <i class="fas fa-redo"></i> Жаңа ойын
+      </button>
+      <button class="btn-secondary" onclick="undoMove()">
+        <i class="fas fa-undo"></i> Артқа қайтару
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 • NURIK жасаған • chessboard.js + chess.js
+  </footer>
+
+  <!-- Кітапханалар -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
